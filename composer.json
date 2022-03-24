@@ -1,0 +1,28 @@
+{
+    "name": "beycan/tron-web3",
+    "version": "1.0.0",
+    "description": "Allows you to easily make requests to the Tron RPC API.",
+    "type": "library",
+    "license": "LGPL-3.0",
+    "authors": [
+        {
+            "name": "Halil Beycan",
+            "email": "halilbeycan0@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/BeycanDeveloper/tron-web3/issues"
+    },
+    "homepage": "https://github.com/BeycanDeveloper/tron-web3",
+    "require": {
+        "php": ">=7.4",
+        "phpseclib/phpseclib": "~2.0.11",
+        "ext-mbstring": "*",
+        "iexbase/tron-api": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Beycan\\TronWeb3\\" : "src"
+        }
+    }
+}

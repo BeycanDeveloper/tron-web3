@@ -167,7 +167,7 @@ final class Transaction
     public function getUrl() 
     {
         $explorerUrl = $this->connection->network->explorer;
-        $explorerUrl += '#/transaction/' . $this->id;
+        $explorerUrl .= '#/transaction/' . $this->id;
         return $explorerUrl;
     }
 }

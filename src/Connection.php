@@ -23,9 +23,9 @@ final class Connection
         ]
     ];
 
-    private $network;
+    public $network;
 
-    public static $connection = false;
+    public static $connection = null;
 
     /**
      * @param string $network
@@ -69,9 +69,9 @@ final class Connection
     }
 
     /**
-     * @return Connection
+     * @return Connection|null
      */
-    public static function getConnection() : Connection
+    public static function getConnection() : ?Connection
     {
         return self::$connection;
     }

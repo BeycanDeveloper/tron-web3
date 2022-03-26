@@ -160,4 +160,14 @@ final class Transaction
             return $result;
         }
     }
+
+    /**
+     * @return string
+     */
+    public function getTransactionUrl() 
+    {
+        $explorerUrl = $this->connection->network->explorer;
+        $explorerUrl += '#/transaction/' . $this->id;
+        return $explorerUrl;
+    }
 }
